@@ -1,0 +1,28 @@
+package webelement_methods;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ToUseSubmitMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://demowebshop.tricentis.com/");
+		Thread.sleep(3000);
+		
+		// click on search button using submit method
+		//driver.findElement(By.xpath("//input[@value='Search']")).submit();
+		
+		// click on search button using submit method by storing in a variable
+		WebElement searchButton = driver.findElement(By.xpath("//input[@value='Search']"));
+		searchButton.submit();
+		Thread.sleep(2000);
+		driver.quit();
+		
+
+	}
+
+}

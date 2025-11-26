@@ -1,0 +1,10 @@
+package ExceptionHandling;
+
+public class Arithmetic_Exception2 {
+	public static void main(String[] args) {
+		System.out.println(40*2);
+		System.out.println(20/0);
+		System.out.println(10-20);
+	}
+
+}
