@@ -1,0 +1,25 @@
+package myfreespace;
+
+import java.util.LinkedHashSet;
+
+public class ToCreateLinkedHashSet {
+public static void main(String[] args) {
+	LinkedHashSet l = new LinkedHashSet();
+	l.add(100);
+	l.add("balasai");
+	l.add(007);
+	l.add('d');
+	l.add(true);
+	l.add(null);
+	l.add(5.55);
+	l.add(123456789);
+	
+	System.out.println(l);
+	System.out.println(l.size());
+	System.out.println(l.isEmpty());
+	
+	for(Object y:l) {
+		System.out.println(y);
+	}
+}
+}

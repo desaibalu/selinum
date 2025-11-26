@@ -1,0 +1,21 @@
+package webelement_methods;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ToUsegetTagMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+	  ChromeDriver driver = new ChromeDriver();
+	  driver.manage().window().maximize();
+	  
+	  driver.get("https://www.actitime.com/");
+	  Thread.sleep(3000);
+	  
+	  // capture the tag of the element
+	   String tagname = driver.findElement(By.linkText("Try actiTIME for Free")).getTagName();
+       System.out.println(tagname);
+	}
+
+}

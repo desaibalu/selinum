@@ -1,0 +1,15 @@
+package ExceptionHandling;
+
+public class ClassCastingException {
+	public static void main(String[] args) {
+		Cc1 c = new Cc2();
+		try {
+		Cc3 a = (Cc3)c;
+		}
+		catch(ClassCastException h) {  // specialization; generalization- RuntimeException; parent Generalization -Exception
+			System.out.println(h.getMessage());
+			
+		}
+	}
+
+}

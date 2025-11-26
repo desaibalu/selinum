@@ -1,0 +1,30 @@
+package myfreespace;
+
+import java.util.ArrayList;
+
+public class TomakeArrayList {
+public static void main(String[] args) {
+	ArrayList a = new ArrayList();
+	a.add(10);
+	a.add(10);
+	a.add('a');
+	a.add(null);
+	a.add(true);
+	a.add("balu");
+	a.add(5.6);
+	System.out.println(a);
+	System.out.println(a.size());
+	a.remove(1); // remove method
+	a.add(20); // add method
+	System.out.println(a);
+	System.out.println(a.contains('a')); // contains method it gives return type is boolean
+	System.out.println(a.isEmpty()); // empty method it gives return type is boolean
+	a.clear();  // clear method it is used to clear the objectives in array list
+	System.out.println(a);
+	System.out.println(a.isEmpty());
+	
+	for(int i=0;i<a.size()-1;i++) {
+		System.out.println(a.get(i));
+	}
+}
+}

@@ -1,0 +1,11 @@
+package ExceptionHandling;
+
+public class NullPointException {
+	public static void main(String[] args) {
+		int[] a = {10,20};
+		String s = null;
+		System.out.println(a[0]);
+		System.out.println(s.charAt(0));
+	}
+
+}

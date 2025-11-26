@@ -1,0 +1,17 @@
+package myfreespace;
+
+import java.util.ArrayList;
+
+public class TomakeArrayList {
+public static void main(String[] args) {
+	ArrayList a = new ArrayList();
+	a.add(10);
+	a.add(10);
+	a.add('a');
+	a.add(null);
+	a.add(true);
+	a.add("balu");
+	System.out.println(a);
+	System.out.println(a.size());
+}
+}

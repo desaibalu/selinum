@@ -1,0 +1,16 @@
+package myfreespace;
+
+class demo {
+public static void main(String[] args) {
+	byte a = 66;
+	short b = a;
+	int c = b;
+	long d = c;
+	float f = d;
+	double g = f;
+	
+System.out.println(b);
+System.out.println(c);
+System.out.println(d);
+System.out.println(f);}
+}

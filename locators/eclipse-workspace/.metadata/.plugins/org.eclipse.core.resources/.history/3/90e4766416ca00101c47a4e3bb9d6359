@@ -1,0 +1,32 @@
+package webelement_methods;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ToUseSendKeysMethod {
+
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		driver.get("https://demowebshop.tricentis.com/");
+		Thread.sleep(3000);
+		
+		driver.findElement(By.linkText("Register")).click();
+		Thread.sleep(3000);
+		
+		driver.findElement(By.xpath("//input[@value='M']")).click();
+		driver.findElement(By.id("FirstName")).sendKeys("ben");
+		driver.findElement(By.cssSelector("input[id='LastName']")).sendKeys("10");
+		driver.findElement(By.xpath("//input[@name='Email']")).sendKeys("ben10cn@gmail.com");
+		driver.findElement(By.id("Password")).sendKeys("pass10");
+		driver.findElement(By.xpath("//input[@type='password' and @name='ConfirmPassword']")).sendKeys("pass10");
+	    //clicked by using index
+		driver.findElement(By.xpath("(//input[contains(@class,'button-1')])[3]")).click();
+		Thread.sleep(3000);
+		driver.quit();
+		
+
+	}
+
+}

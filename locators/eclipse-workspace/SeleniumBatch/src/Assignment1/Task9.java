@@ -1,0 +1,22 @@
+package Assignment1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Task9 {
+
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.facebook.com/");
+		Thread.sleep(3000);
+	    String logotext = driver.findElement(By.xpath("//img[@alt='Facebook']")).getText();
+		System.out.println(logotext);
+		String logoinfo = driver.findElement(By.xpath("//h2[contains(text(),'connect ')]")).getText();
+		System.out.println(logoinfo);
+		Thread.sleep(5000);
+		driver.quit();
+
+	}
+
+}
